@@ -1,4 +1,4 @@
-DELETE FROM mart.f_customer_retention;
+DELETE FROM mart.f_customer_retention where mart.f_customer_retention.date_time::Date = '{{ds}}';
 insert into mart.f_customer_retention (new_customers_count, returning_customers_count,
     refunded_customer_count, period_id, item_id, new_customers_revenue, returning_customers_revenue, customers_refunded)
 --  tables for calculations
