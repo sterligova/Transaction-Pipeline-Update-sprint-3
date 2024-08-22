@@ -1,7 +1,8 @@
-# Проект 3-го спринта
+# Projet du 3ème sprint
 
-### Описание
-Репозиторий предназначен для сдачи проекта 3-го спринта
+### Description du projet
+
+Le système du magasin continue d'évoluer : l'équipe de développement a ajouté des fonctionnalités pour annuler les commandes et rembourser les fonds. Cela implique que les processus dans le pipeline doivent être mis à jour. Les données sont fournies via une API. Le rapport sur la fidélisation des clients prend actuellement beaucoup de temps à se construire, il est donc nécessaire de calculer les métriques requises dans un datamart supplémentaire. 
 
 ### Как работать с репозиторием
 1. В вашем GitHub-аккаунте автоматически создастся репозиторий `de-project-sprint-3` после того, как вы привяжете свой GitHub-аккаунт на Платформе.
@@ -15,10 +16,10 @@
 5. Обновите репозиторий в вашем GutHub-аккаунте:
 	* `git push origin main`
 
-### Структура репозитория
-1. Папка `migrations` хранит файлы миграции. Файлы миграции должны быть с расширением `.sql` и содержать SQL-скрипт обновления базы данных.
-2. В папке `src` хранятся все необходимые исходники: 
-    * Папка `dags` содержит DAG's Airflow.
+### Structure du répertoire
+1. Le dossier migrations contient les fichiers de migration. Les fichiers de migration doivent avoir l'extension .sql et contenir le script SQL de mise à jour de la base de données.
+2. Le dossier src contient tous les fichiers source nécessaires :
+- Le dossier dags contient les DAGs d'Airflow.
 
 ### Как запустить контейнер
 Запустите локально команду:
