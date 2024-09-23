@@ -42,7 +42,7 @@ headers = {
 conn = BaseHook.get_connection('pg_connection')
 
 ##init test connection
-conn = psycopg2.connect(f"dbname='de' port='5432' user='jovyan' host='localhost' password='jovyan'")
+conn = psycopg2.connect(f"dbname='dbname' port='port' user='user' host='host' password='password'")
 cur = conn.cursor()
 cur.close()
 conn.close()
@@ -118,7 +118,7 @@ def upload_data_to_staging(filename, date, pg_table, pg_schema, ti):
     
 
     #conn = BaseHook.get_connection('pg_connection')
-    #conn = psycopg2.connect(f"dbname='de' port='5432' user='jovyan' host='localhost' password='jovyan'")
+    #conn = psycopg2.connect(f"dbname='dbname' port='port' user='user' host='host' password='password'")
 
     psql_conn = 'pg_connection'
     postgres_hook = PostgresHook(psql_conn)
